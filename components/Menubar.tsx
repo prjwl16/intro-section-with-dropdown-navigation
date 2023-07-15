@@ -3,7 +3,11 @@ import Link from 'next/link';
 const Feature = ["Todo List", "Calendar", "Reminders", "Planning"];
 const Company = ["History", "Our team", "Blog"];
 
-function Menubar({ title }) {
+interface props{
+    title :string
+}
+
+function Menubar({ title }: props) {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
